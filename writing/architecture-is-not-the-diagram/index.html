@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Architecture Is Not the Diagram · Architect Tomorrow</title>
+<meta name="description" content="Architecture decisions are ultimately decisions about constraints, trade-offs and the future behaviour of a system.">
+<meta name="theme-color" content="#fcfaf7">
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script defer src="../../assets/js/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
+    <span><strong>Architect Tomorrow</strong><small>Jagadeesh Devaraj</small></span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="../../#author">Author</a>
+    <a href="../../#writing">Writing</a>
+    <a href="../../#work">Work</a>
+    <a href="../../#explore">Explore</a>
+  </nav>
+  <div class="header-socials" aria-label="External profiles">
+    <a href="https://www.linkedin.com/in/rdjagadeesh/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
+    <a href="https://github.com/rdjagadeesh" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+    <a href="https://medium.com/@rdjagadeesh" target="_blank" rel="noreferrer" aria-label="Medium" title="Medium">M</a>
+  </div>
+</header>
+<main><article class="post-page wrap-narrow">
+  <div class="post-meta"><span>Enterprise Architecture</span><span>2026-09-03</span><span>2 min read</span></div>
+  <h1>Architecture Is Not the Diagram</h1>
+  <p class="post-dek">Architecture decisions are ultimately decisions about constraints, trade-offs and the future behaviour of a system.</p>
+  <div class="post-body"><p>Architecture is often represented as a diagram.</p><p>Boxes. Lines. Protocols. Databases. Cloud services.</p><p>The diagram is useful, but it is not the architecture.</p><p>The architecture is the collection of decisions that determine how the system can evolve.</p><h2>Every decision creates a constraint</h2><p>Choosing a database is not just choosing a database. It determines things about data access, consistency, operational ownership, scaling, backup, recovery, skills, cost and future migration.</p><p>Choosing a messaging system, cloud provider or programming language creates a different set of constraints.</p><p>Some constraints are intentional. Others are accidental. The accidental ones are usually the expensive ones.</p><h2>The future cost of today&#x27;s convenience</h2><p>Architecture decisions often look reasonable when viewed locally. A team chooses the simplest solution that solves the immediate problem. That can be exactly the right decision.</p><p>The problem occurs when the organisation forgets that the decision has created a future dependency.</p><p>A shortcut is not necessarily bad architecture. An undocumented shortcut that becomes invisible infrastructure is.</p><h2>Architecture should make trade-offs visible</h2><p>There is rarely a universally correct architecture. There are usually several viable options with different consequences.</p><p>A useful architecture conversation therefore sounds less like “This is the right architecture” and more like: these are the options, these are the constraints, these are the risks, this is what we are choosing, and this is what we are accepting as a consequence.</p><p>That is a much more useful conversation.</p><h2>The operating model is part of the architecture</h2><p>A technically elegant system can still be a poor organisational architecture. If nobody can operate it, understand it or recover it at three in the morning, the diagram is missing something important.</p><p>Architecture needs to account for ownership, skills, operational maturity, support, observability, security, recovery and change management.</p><p>Systems don&#x27;t operate themselves. People operate systems.</p><h2>Good architecture creates options</h2><p>Good architecture does not attempt to predict the future perfectly. It creates reasonable options for responding to it. It keeps important decisions reversible where possible, makes irreversible decisions deliberate, makes dependencies visible, and avoids turning today&#x27;s implementation detail into tomorrow&#x27;s organisational constraint.</p><p>The diagram is simply the most convenient way we have found to communicate some of those decisions.</p><p>The decisions themselves are the architecture.</p></div>
+  <div class="post-source"><span>Written by Jagadeesh Devaraj</span><span><a href="https://www.linkedin.com/in/rdjagadeesh/">Follow the work ↗</a></span></div>
+</article>
+</main>
+<footer class="site-footer">
+  <div><strong>Architect Tomorrow</strong><span>Independent writing and work by Jagadeesh Devaraj.</span></div>
+  <div class="footer-links"><a href="https://github.com/rdjagadeesh">GitHub</a><a href="https://medium.com/@rdjagadeesh">Medium</a><a href="https://www.myitblog.in/">My IT Blog</a><a href="https://www.linkedin.com/in/rdjagadeesh/">LinkedIn</a></div>
+</footer>
+</body>
+</html>
