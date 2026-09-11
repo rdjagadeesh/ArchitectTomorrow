@@ -1,44 +1,28 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reliability Is a Product Decision Before It Becomes an Engineering Problem · Architect Tomorrow</title>
-<meta name="description" content="Engineering can improve reliability, but an organisation first has to decide what level of failure it is willing to tolerate.">
-<meta name="theme-color" content="#fcfaf7">
-<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-<link rel="stylesheet" href="../../assets/css/site.css">
-<script defer src="../../assets/js/site.js"></script>
-</head>
-<body>
-<header class="site-header">
-  <a class="brand" href="../../">
-    <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
-    <span><strong>Architect Tomorrow</strong><small>Jagadeesh Devaraj</small></span>
-  </a>
-  <nav aria-label="Primary">
-    <a href="../../#author">Author</a>
-    <a href="../../#writing">Writing</a>
-    <a href="../../#work">Work</a>
-    <a href="../../#explore">Explore</a>
-  </nav>
-  <div class="header-socials" aria-label="External profiles">
-    <a href="https://www.linkedin.com/in/rdjagadeesh/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
-    <a href="https://github.com/rdjagadeesh" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">GH</a>
-    <a href="https://medium.com/@rdjagadeesh" target="_blank" rel="noreferrer" aria-label="Medium" title="Medium">M</a>
-  </div>
-</header>
-<main><article class="post-page wrap-narrow">
-  <div class="post-meta"><span>SRE &amp; Reliability</span><span>2026-08-27</span><span>1 min read</span></div>
-  <h1>Reliability Is a Product Decision Before It Becomes an Engineering Problem</h1>
+<article class="post-page wrap-narrow">
+  <div class="post-meta"><span></span><span>2026-08-27</span><span>5 min read</span></div>
+  <h1></h1>
   <p class="post-dek">Engineering can improve reliability, but an organisation first has to decide what level of failure it is willing to tolerate.</p>
-  <div class="post-body"><p>Reliability is frequently treated as an engineering responsibility.</p><p>The engineering team owns uptime. The platform team owns availability. SRE owns reliability.</p><p>There is some truth in each statement, but the framing is incomplete.</p><p>Reliability is ultimately a product and organisational decision.</p><h2>There is no absolute reliability</h2><p>A system that never fails is a theoretical concept. In practice, reliability is a trade-off.</p><p>Improving availability can require additional infrastructure, redundancy, operational complexity and engineering effort. At some point the organisation has to decide whether another increment of reliability is worth its cost.</p><p>That decision belongs beyond engineering.</p><h2>Start with failure tolerance</h2><p>A more useful conversation begins with: what happens if this system is unavailable?</p><p>Customers may not be able to complete transactions. Internal users may have to wait. A business process may continue manually.</p><p>Those are very different consequences, and they imply very different reliability requirements.</p><h2>SLOs force a conversation</h2><p>Service Level Objectives are often introduced as an SRE mechanism. Their more important function is organisational: they make reliability explicit.</p><p>A 99.9% availability objective is a business decision expressed numerically. It implicitly accepts a certain amount of unavailability.</p><h2>Reliability has multiple dimensions</h2><p>Availability is only one dimension. Depending on the system, we may care about latency, correctness, durability, recovery time, recovery point, capacity, dependency resilience and operational recovery.</p><p>A system can be available and still be effectively unusable. It can respond quickly and return the wrong answer. It can have excellent uptime and poor recovery characteristics.</p><p>Reliability needs to describe the behaviour users and the business actually depend on.</p><h2>Reliability is an organisational capability</h2><p>The strongest reliability cultures do not treat reliability as something a particular team owns. Product decides what matters. Architecture establishes useful boundaries. Engineering builds for failure. Operations maintains the system. Security considers failure modes and exposure. Leadership decides where to invest.</p><p>Reliability emerges from all of those decisions.</p></div>
-  <div class="post-source"><span>Written by Jagadeesh Devaraj</span><span><a href="https://www.linkedin.com/in/rdjagadeesh/">Follow the work ↗</a></span></div>
+  <div class="post-body"><p>Reliability is frequently treated as an engineering responsibility.</p>
+<p>The engineering team owns uptime. The platform team owns availability. SRE owns reliability.</p>
+<p>There is some truth in each statement, but the framing is incomplete.</p>
+<p>Reliability is ultimately a product and organisational decision.</p>
+<h2 id="there-is-no-absolute-reliability">There is no absolute reliability</h2>
+<p>A system that never fails is a theoretical concept. In practice, reliability is a trade-off.</p>
+<p>Improving availability can require additional infrastructure, redundancy, operational complexity and engineering effort. At some point the organisation has to decide whether another increment of reliability is worth its cost.</p>
+<p>That decision belongs beyond engineering.</p>
+<h2 id="start-with-failure-tolerance">Start with failure tolerance</h2>
+<p>A more useful conversation begins with: what happens if this system is unavailable?</p>
+<p>Customers may not be able to complete transactions. Internal users may have to wait. A business process may continue manually.</p>
+<p>Those are very different consequences, and they imply very different reliability requirements.</p>
+<h2 id="slos-force-a-conversation">SLOs force a conversation</h2>
+<p>Service Level Objectives are often introduced as an SRE mechanism. Their more important function is organisational: they make reliability explicit.</p>
+<p>A 99.9% availability objective is a business decision expressed numerically. It implicitly accepts a certain amount of unavailability.</p>
+<h2 id="reliability-has-multiple-dimensions">Reliability has multiple dimensions</h2>
+<p>Availability is only one dimension. Depending on the system, we may care about latency, correctness, durability, recovery time, recovery point, capacity, dependency resilience and operational recovery.</p>
+<p>A system can be available and still be effectively unusable. It can respond quickly and return the wrong answer. It can have excellent uptime and poor recovery characteristics.</p>
+<p>Reliability needs to describe the behaviour users and the business actually depend on.</p>
+<h2 id="reliability-is-an-organisational-capability">Reliability is an organisational capability</h2>
+<p>The strongest reliability cultures do not treat reliability as something a particular team owns. Product decides what matters. Architecture establishes useful boundaries. Engineering builds for failure. Operations maintains the system. Security considers failure modes and exposure. Leadership decides where to invest.</p>
+<p>Reliability emerges from all of those decisions.</p></div>
+  <div class="post-source"><span>Written by Jagadeesh Devaraj</span><span><a href="">Follow the work ↗</a></span></div>
 </article>
-</main>
-<footer class="site-footer">
-  <div><strong>Architect Tomorrow</strong><span>Independent writing and work by Jagadeesh Devaraj.</span></div>
-  <div class="footer-links"><a href="https://github.com/rdjagadeesh">GitHub</a><a href="https://medium.com/@rdjagadeesh">Medium</a><a href="https://www.myitblog.in/">My IT Blog</a><a href="https://www.linkedin.com/in/rdjagadeesh/">LinkedIn</a></div>
-</footer>
-</body>
-</html>
